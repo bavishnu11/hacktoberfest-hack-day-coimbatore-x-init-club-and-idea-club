@@ -189,15 +189,15 @@ cd [project-directory]
 
 ## Submission Checklist
 
-- [1] Project title and description added
-- [1] All team members listed
-- [1] Problem clearly explained
-- [1] Reason for choosing the problem explained
-- [1] Solution and key features documented
-- [1] Innovation and differentiation explained
-- [1] Architecture included
-- [1] Technical implementation documented
-- [1] Work completed during the hackathon documented
+- [X] Project title and description added
+- [X] All team members listed
+- [X] Problem clearly explained
+- [x] Reason for choosing the problem explained
+- [X] Solution and key features documented
+- [x] Innovation and differentiation explained
+- [X] Architecture included
+- [X] Technical implementation documented
+- [X] Work completed during the hackathon documented
 - [ ] Team contributions documented
 - [ ] Working application is functional
 - [ ] Live application link added where applicable

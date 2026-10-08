@@ -1,4 +1,4 @@
-# Recapify
+# Lecturelens
 
 > Your lecture, searchable and explained in your own language
 
@@ -19,7 +19,7 @@
 
 ### The Problem
 
-Lectures are long, hard to search, and often mix English with a local language, which makes revision harder than it should be. Recapify lets you upload a lecture recording and get a transcript with timestamps, a summary, key terms, and a quiz. You can then ask questions in your chosen language, and every answer is drawn only from what was said in the lecture, with timestamp citations so you can jump straight to the source.
+Lectures are long, hard to search, and often mix English with a local language, which makes revision harder than it should be. Lecturelens lets you upload a lecture recording and get a transcript with timestamps, a summary, key terms, and a quiz. You can then ask questions in your chosen language, and every answer is drawn only from what was said in the lecture, with timestamp citations so you can jump straight to the source.
 
 ### Why We Chose This Problem
 
@@ -28,7 +28,7 @@ Finding the exact moment a concept was explained, and asking follow-up questions
 
 ## Solution
 
-Recapify turns any lecture recording into a searchable study resource. A student uploads an audio file or lecture pdf, picks the lecture's language, and receives a timestamped transcript, a summary, key terms, and a quiz. They can then ask questions in their own language, and each answer comes only from what the lecture covered, with timestamp citations pointing to the exact moment. If the lecture doesn't address a question, Recapify says so rather than guessing.
+Lecturelens turns any lecture recording into a searchable study resource. A student uploads an audio file or lecture pdf, picks the lecture's language, and receives a timestamped transcript, a summary, key terms, and a quiz. They can then ask questions in their own language, and each answer comes only from what the lecture covered, with timestamp citations pointing to the exact moment. If the lecture doesn't address a question, Recapify says so rather than guessing.
 
 ### Key Features
 
@@ -82,7 +82,7 @@ flowchart TD
 
 System components and how they interact
 
-Recapify is a pipeline of four Python modules, each owned by one team member, tied together by a Gradio interface.
+Lecturelens is a pipeline of four Python modules, each owned by one team member, tied together by a Gradio interface.
 
 transcribe.py uses faster-whisper to turn the uploaded audio into timestamped segments, caching results to JSON so a recording is never transcribed twice.
 

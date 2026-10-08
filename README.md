@@ -49,19 +49,35 @@ Generic AI assistants draw on the broad internet, so they can give confident ans
 [Add the system architecture or workflow Mermaid diagram here.]
 
 ### Technology Stack
-
+```mermaid
+flowchart TD
+    A[Student uploads lecture audio<br/>and selects language] --> B[transcribe.py<br/>faster-whisper]
+    B --> C[Timestamped segments<br/>text, start, end]
+    C --> D[retrieval.py<br/>chunk 300-500 words]
+    D --> E[Multilingual embeddings]
+    E --> F[(ChromaDB<br/>vector store)]
+    C --> G[llm.py<br/>Gemma via Ollama]
+    G --> H[Summary and key terms]
+    G --> I[Quiz questions JSON]
+    J[Student asks a question<br/>in chosen language] --> K[retrieve top-k chunks]
+    F --> K
+    K --> L[llm.py answer<br/>only from lecture context]
+    L --> M[Answer with mm:ss citations<br/>or 'not found in lecture']
+    H --> N[app.py Gradio UI<br/>Notes, Quiz, Ask tabs]
+    I --> N
+    M --> N
+    N --> O[Markdown export]
+```
 
 | Category        | Technologies                |
 | --------------- | --------------------------- |
-| Frontend        | [Technologies / N/A]        |
-| Backend         | [Technologies / N/A]        |
-| Database        | [Technologies / N/A]        |
-| AI / ML         | [Models / frameworks / N/A] |
-| Infrastructure  | [Technologies / N/A]        |
-| APIs / Services | [Services / N/A]            |
+| Frontend        | Python using Gradio       |
+| Backend         | Python Moddules      |
+| Database        | Chroma DB        |
+| AI / ML         | faster-whisper (transcription), Gemma 4 E4B via Ollama (E2B as backup), multilingual sentence-transformers (embeddings)|
+| Infrastructure  | Python 3.10+, ChromaDB (vector store), Gradio (UI), runs locally; optional Hugging Face Spaces hosting        |
+| APIs / Services | None required; all components are open source and run locally via Ollama            |
 
-
-If a category or technology is not implemented in the project, specify `N/A` instead of leaving the field blank.
 
 ### How It Works
 

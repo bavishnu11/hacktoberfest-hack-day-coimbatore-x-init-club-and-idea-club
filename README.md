@@ -28,7 +28,7 @@ Finding the exact moment a concept was explained, and asking follow-up questions
 
 ## Solution
 
-Lecturelens turns any lecture recording into a searchable study resource. A student uploads an audio file or lecture pdf, picks the lecture's language, and receives a timestamped transcript, a summary, key terms, and a quiz. They can then ask questions in their own language, and each answer comes only from what the lecture covered, with timestamp citations pointing to the exact moment. If the lecture doesn't address a question, Recapify says so rather than guessing.
+Lecturelens turns any lecture recording into a searchable study resource. A student uploads an audio file or lecture pdf, picks the lecture's language, and receives a timestamped transcript, a summary, key terms, and a quiz. They can then ask questions in their own language, and each answer comes only from what the lecture covered, with timestamp citations pointing to the exact moment. If the lecture doesn't address a question, Lecturelens says so rather than guessing.
 
 ### Key Features
 
@@ -40,7 +40,7 @@ Lecturelens turns any lecture recording into a searchable study resource. A stud
 ## Innovation and Differentiation
 
 Most lecture tools stop at transcription, leaving students to search a wall of text by hand. Recapify lets them question the lecture instead. Answers come only from the recording, cite the exact timestamp, and are given in the student's chosen language. If the lecture doesn't cover a question, Recapify says so.
-Generic AI assistants draw on the broad internet, so they can give confident answers that don't match what the professor taught. Recapify keeps answers tied to the course material, and it runs locally on open-source tools, so recordings never leave the student's machine.
+Generic AI assistants draw on the broad internet, so they can give confident answers that don't match what the professor taught. Lecturelens keeps answers tied to the course material, and it runs locally on open-source tools, so recordings never leave the student's machine.
 
 ## Technical Implementation
 

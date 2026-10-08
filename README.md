@@ -104,10 +104,10 @@ Setup runs once per lecture: transcribe, index, then generate notes. After that,
 
 ### Team Contributions
 
-- **[Member Name]:** [Contribution]
-- **[Member Name]:** [Contribution]
-- **[Member Name]:** [Contribution]
-- **[Member Name]:** [Contribution]
+- **Sanjay Vijay:** [Contribution]
+- **Sujithbabu S S:** [Contribution]
+- **Vishal P:** [Contribution]
+- **S J Bavishnu:** [Contribution]
 
 ## Working Application
 
@@ -127,7 +127,8 @@ The submitted application should be functional and accessible through the provid
 
 ### AI / Models
 
-- **[Model]:** [How it is used]
+- **Antigravity:** Vibe Coding 
+  **Claude:** Structuring Presentation
 
 ### Open Source Components
 

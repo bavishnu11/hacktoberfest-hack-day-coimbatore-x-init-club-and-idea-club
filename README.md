@@ -4,15 +4,15 @@
 
 ## Team
 
-**Team Name:** [Team Name]
+**Team Name:** 404BLUE
 
 
 | Member | Contribution   |
 | ------ | -------------- |
-| [Name] | [Contribution] |
-| [Name] | [Contribution] |
-| [Name] | [Contribution] |
-| [Name] | [Contribution] |
+| Snajay Vijay | [Contribution] |
+| Sujithbabu S S | [Contribution] |
+| Vishal P | [Contribution] |
+| S J Bavishnu | [Contribution] |
 
 
 ## Problem Statement

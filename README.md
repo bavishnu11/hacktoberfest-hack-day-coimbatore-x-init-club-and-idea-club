@@ -99,11 +99,17 @@ Setup runs once per lecture: transcribe, index, then generate notes. After that,
 Modular design: Four independent modules (transcription, retrieval, LLM, UI) connect through fixed function contracts, with stubs written first so the team could build in parallel.
 Local open-source stack: faster-whisper, ChromaDB, Ollama, and Gradio keep audio private, cost nothing, and work offline.
 Timestamps throughout: Segment timing is preserved from transcription to retrieval, so answers can point to the exact moment in the lecture.
+
 RAG: The transcript is chunked, embedded, and searched (top 4 chunks), which fits long lectures into a small model's context and keeps answers grounded.
+
 Multilingual support: A multilingual embedding model lets Malayalam, Hindi, and English questions and content match each other.
+
 Grounded answers: The prompt restricts the model to the retrieved context and includes a "not found" response to reduce hallucination.
+
 Performance: faster-whisper, caching, and short demo clips keep it responsive on modest hardware.
+
 Process: One file per owner, an integration checkpoint at 2:30, and a feature freeze at 4:00 kept the project on track.
+
 Accepted trade-offs: A small local LLM is less capable, Malayalam transcription is less accurate, and quiz quality is limited.
 
 ## Implementation During the Hackathon

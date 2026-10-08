@@ -1,6 +1,6 @@
-# [Project Name]
+# Recapify
 
-> [One-line description of the project and what it does.]
+> Your lecture, searchable and explained in your own language
 
 ## Team
 
@@ -19,22 +19,23 @@
 
 ### The Problem
 
-[Describe the problem being addressed, who is affected by it, and the context in which it occurs.]
+Lectures are long, hard to search, and often mix English with a local language, which makes revision harder than it should be. Recapify lets you upload a lecture recording and get a transcript with timestamps, a summary, key terms, and a quiz. You can then ask questions in your chosen language, and every answer is drawn only from what was said in the lecture, with timestamp citations so you can jump straight to the source.
 
 ### Why We Chose This Problem
 
-[Explain why the team selected this problem and why solving it is important.]
+Useful explanations happen in lectures, then vanish into recordings nobody has time to replay. Revision is where learning consolidates, yet it's where students get the least support. When lectures switch between English and a regional language, the students who most need clarity often get the least of it.
+Finding the exact moment a concept was explained, and asking follow-up questions in their own language, helps students understand instead of memorizing fragments. Recapify runs fully on open-source tools and stays on the student's machine, so it's realistic for low-budget colleges and privacy-conscious students.
 
 ## Solution
 
-[Describe the proposed solution and how it addresses the problem.]
+Recapify turns any lecture recording into a searchable study resource. A student uploads an audio file or lecture pdf, picks the lecture's language, and receives a timestamped transcript, a summary, key terms, and a quiz. They can then ask questions in their own language, and each answer comes only from what the lecture covered, with timestamp citations pointing to the exact moment. If the lecture doesn't address a question, Recapify says so rather than guessing.
 
 ### Key Features
 
-- [Feature 1]
-- [Feature 2]
-- [Feature 3]
-- [Feature 4]
+- Transcription with timestamps: Converts lecture audio into text using faster-whisper, with each segment linked to its position in the recording.
+- Summary and key terms: Generates a concise overview and a list of important concepts for quick revision.
+- Grounded Q&A in your language: Answers questions using only the lecture content, in the language you select, with mm:ss timestamp citations.
+- Auto-generated quiz: Creates questions from the lecture so students can check their understanding.
 
 ## Innovation and Differentiation
 

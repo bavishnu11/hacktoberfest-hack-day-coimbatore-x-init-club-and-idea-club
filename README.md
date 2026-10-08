@@ -129,7 +129,19 @@ Accepted trade-offs: A small local LLM is less capable, Malayalam transcription 
 
 **Live Application:** [Live URL]
 
-[Briefly explain how the deployed application can be accessed and what functionality can be tested.]
+Upload audio: Add a lecture clip (English, Hindi, or Malayalam) and select its language.
+
+Transcript: View the transcription with timestamps.
+
+Summary and key terms: Generate study notes from the lecture.
+
+Quiz: Generate multiple-choice questions with answers.
+
+Ask questions: Type a question in any supported language and get an answer grounded in the lecture, with the timestamp of the source.
+
+Not-found handling: Ask something the lecture doesn't cover and it should say the answer isn't there.
+
+Export: Download the notes.
 
 The submitted application should be functional and accessible through the provided link where applicable.
 

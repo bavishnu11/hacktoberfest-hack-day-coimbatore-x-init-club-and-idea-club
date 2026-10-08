@@ -24,7 +24,7 @@ Lectures are long, hard to search, and often mix English with a local language, 
 ### Why We Chose This Problem
 
 Useful explanations happen in lectures, then vanish into recordings nobody has time to replay. Revision is where learning consolidates, yet it's where students get the least support. When lectures switch between English and a regional language, the students who most need clarity often get the least of it.
-Finding the exact moment a concept was explained, and asking follow-up questions in their own language, helps students understand instead of memorizing fragments. Recapify runs fully on open-source tools and stays on the student's machine, so it's realistic for low-budget colleges and privacy-conscious students.
+Finding the exact moment a concept was explained, and asking follow-up questions in their own language, helps students understand instead of memorizing fragments. Lecturelens runs fully on open-source tools and stays on the student's machine, so it's realistic for low-budget colleges and privacy-conscious students.
 
 ## Solution
 
@@ -39,7 +39,7 @@ Lecturelens turns any lecture recording into a searchable study resource. A stud
 
 ## Innovation and Differentiation
 
-Most lecture tools stop at transcription, leaving students to search a wall of text by hand. Recapify lets them question the lecture instead. Answers come only from the recording, cite the exact timestamp, and are given in the student's chosen language. If the lecture doesn't cover a question, Recapify says so.
+Most lecture tools stop at transcription, leaving students to search a wall of text by hand. Lecturelens lets them question the lecture instead. Answers come only from the recording, cite the exact timestamp, and are given in the student's chosen language. If the lecture doesn't cover a question, Lecturelens says so.
 Generic AI assistants draw on the broad internet, so they can give confident answers that don't match what the professor taught. Lecturelens keeps answers tied to the course material, and it runs locally on open-source tools, so recordings never leave the student's machine.
 
 ## Technical Implementation

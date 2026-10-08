@@ -104,6 +104,8 @@ Setup runs once per lecture: transcribe, index, then generate notes. After that,
 
 ### Team Contributions
 
+| Member | Contribution   |
+| ------ | -------------- |
 | Sanjay Vijay | faster-whisper, timestamps, language setting, transcript cleanup |
 | Sujithbabu S S | Chunking, embeddings, ChromaDB, search function with timestamp metadata |
 | Vishal P | Ollama setup, summary, key terms, quiz, Q&A prompt, multilingual answers |

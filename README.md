@@ -114,7 +114,16 @@ Accepted trade-offs: A small local LLM is less capable, Malayalam transcription 
 
 ## Implementation During the Hackathon
 
-[Describe what the team built during the Hack Day and the major functionality or components completed during the event.]
+Transcription: Audio upload and speech-to-text with faster-whisper, with timestamps and a language option (English, Hindi, Malayalam).
+
+Retrieval (RAG): Transcript chunking, multilingual embeddings, and a ChromaDB index that returns the most relevant passages with their timestamps.
+
+LLM features: Using Ollama, we built summaries, key terms, multiple-choice quizzes, and question answering grounded in the lecture, with multilingual answers and 
+a "not found" response.
+
+User interface: A Gradio web app that connects the full flow (upload, transcribe, index, ask) and includes an export button.
+
+Delivery: A shared Git repo with commits from all four members, a README, a backup demo video, and a deployed demo.
 
 ### Team Contributions
 

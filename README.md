@@ -136,8 +136,6 @@ Delivery: A shared Git repo with commits from all four members, a README, a back
 
 ## Working Application
 
-**Live Application:** [Live URL]
-
 Upload audio: Add a lecture clip (English, Hindi, or Malayalam) and select its language.
 
 Transcript: View the transcription with timestamps.
@@ -222,11 +220,46 @@ CACHE_DIR=./cache
 
 ### Usage
 
-[Explain the basic steps required to use the project.]
+1. Install the dependencies
+
+bash
+python3 -m venv venv
+source venv/bin/activate        # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+pip install pypdf pytesseract pillow python-docx
+
+The second line is needed because transcribe.py imports these for PDF, image, and Word files, but requirements.txt doesn't list them. Image support also needs the Tesseract program installed on your system.
+
+2. Start Ollama and pull the model
+
+bash
+ollama serve
+ollama pull gemma:2b
+
+The code uses gemma:2b (set in llm.py), so pull that exact tag.
+
+3. Run the app
+
+bash
+python app.py
+
+Open http://localhost:7860 in your browser. The first run downloads the embedding model (intfloat/multilingual-e5-small), so it needs internet access once.
+
+4. Process a lecture
+
+Go to the Upload Audio tab and add a recording, or go to Upload Document and add a PDF, image, TXT, or DOCX file.
+Choose the Lecture language (English, Malayalam, Hindi, or Tamil) and the Answer language.
+Click Process lecture and wait for the status to show "Ready! Go to the Ask tab."
+
+5. Use the results
+
+Notes tab: the summary and key terms. Use the download button to save them as a Markdown file.
+Quiz tab: five generated questions. The answers are in the answer section.
+Ask tab: type a question. The answer comes only from the lecture, with mm:ss timestamps. Try a question the lecture doesn't cover to see the "not found" response.
 
 ## Devpost Submission
 
-**Devpost Project:** [Devpost Project URL]
+**Devpost Project:** https://dev.to/sanjayvijay0112/lecturelens-mozhi-ask-your-lectures-anything-fully-offline-with-whisper-gemma-and-chromadb-51n3
 
 [Add the link to the team's Devpost submission. Ensure the Devpost project page is complete and contains the required project information, links, media, and team details.]
 
@@ -234,11 +267,11 @@ CACHE_DIR=./cache
 
 ### Credits
 
-[Credit libraries, frameworks, datasets, models, APIs, contributors, and other external resources used.]
+Gemini , Claude
 
 ### License
 
-[License name and/or link.]
+-
 
 ## Submission Checklist
 
@@ -251,15 +284,15 @@ CACHE_DIR=./cache
 - [X] Architecture included
 - [X] Technical implementation documented
 - [X] Work completed during the hackathon documented
-- [ ] Team contributions documented
-- [ ] Working application is functional
-- [ ] Live application link added where applicable
-- [ ] Demo video added
-- [ ] AI and open-source components documented
-- [ ] Setup and usage instructions tested
-- [ ] Challenges and learnings documented
-- [ ] Devpost submission completed
-- [ ] Devpost link added
-- [ ] Credits added
+- [X] Team contributions documented
+- [X] Working application is functional
+- [X] Live application link added where applicable
+- [X] Demo video added
+- [X] AI and open-source components documented
+- [X] Setup and usage instructions tested
+- [X] Challenges and learnings documented
+- [X] Devpost submission completed
+- [X] Devpost link added
+- [X] Credits added
 - [ ] License added
 - [ ] Repository is organized and complete

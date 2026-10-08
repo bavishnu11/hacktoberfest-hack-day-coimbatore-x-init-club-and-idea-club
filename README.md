@@ -9,10 +9,10 @@
 
 | Member | Contribution   |
 | ------ | -------------- |
-| Sanjay Vijay | [Contribution] |
-| Sujithbabu S S | [Contribution] |
-| Vishal P | [Contribution] |
-| S J Bavishnu | [Contribution] |
+| Sanjay Vijay | faster-whisper, timestamps, language setting, transcript cleanup |
+| Sujithbabu S S | Chunking, embeddings, ChromaDB, search function with timestamp metadata |
+| Vishal P | Ollama setup, summary, key terms, quiz, Q&A prompt, multilingual answers |
+| S J Bavishnu | Gradio app, repo and Git workflow, README, demo video, deployment, pitch |
 
 
 ## Problem Statement

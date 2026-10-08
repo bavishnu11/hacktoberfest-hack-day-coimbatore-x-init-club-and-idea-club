@@ -217,7 +217,7 @@ CACHE_DIR=./cache
 ### Running the Project
 
 ```bash
-.\start.sh
+./start.sh
 ```
 
 ### Usage

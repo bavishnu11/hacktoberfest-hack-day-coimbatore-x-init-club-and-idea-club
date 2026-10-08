@@ -9,7 +9,7 @@
 
 | Member | Contribution   |
 | ------ | -------------- |
-| Snajay Vijay | [Contribution] |
+| Sanjay Vijay | [Contribution] |
 | Sujithbabu S S | [Contribution] |
 | Vishal P | [Contribution] |
 | S J Bavishnu | [Contribution] |
@@ -39,7 +39,8 @@ Recapify turns any lecture recording into a searchable study resource. A student
 
 ## Innovation and Differentiation
 
-[Explain what is innovative about the approach and how it differs from existing or conventional solutions.]
+Most lecture tools stop at transcription, leaving students to search a wall of text by hand. Recapify lets them question the lecture instead. Answers come only from the recording, cite the exact timestamp, and are given in the student's chosen language. If the lecture doesn't cover a question, Recapify says so.
+Generic AI assistants draw on the broad internet, so they can give confident answers that don't match what the professor taught. Recapify keeps answers tied to the course material, and it runs locally on open-source tools, so recordings never leave the student's machine.
 
 ## Technical Implementation
 

@@ -158,8 +158,6 @@ The submitted application should be functional and accessible through the provid
 
 **Demo Video:** https://youtu.be/4s3nafAAV2A
 
-[Provide a short demonstration of the working project, covering the main user flow and important functionality.]
-
 ## Open Source and AI Usage
 
 ### AI / Models
@@ -185,15 +183,33 @@ The submitted application should be functional and accessible through the provid
 ### Installation
 
 ```bash
-git clone [repository-url]
-cd [project-directory]
-[installation-command]
+git clone https://github.com/bavishnu11/hacktoberfest-hack-day-coimbatore-x-init-club-and-idea-club
+cd hacktoberfest-hack-day-coimbatore-x-init-club-and-idea-club
+python -m venv venv
+source venv/bin/activate        
+pip install -r requirements.txt
 ```
 
 ### Environment Variables
 
 ```env
-[VARIABLE_NAME]=[value]
+# Ollama
+OLLAMA_HOST=http://localhost:11434
+OLLAMA_MODEL=gemma4:e4b
+
+# Whisper
+WHISPER_MODEL_SIZE=small
+WHISPER_DEVICE=cpu
+WHISPER_COMPUTE_TYPE=int8
+
+# Embeddings
+EMBEDDING_MODEL=paraphrase-multilingual-MiniLM-L12-v2
+
+# ChromaDB
+CHROMA_PERSIST_DIR=./chroma_db
+
+# Cache
+CACHE_DIR=./cache
 ```
 
 
@@ -201,7 +217,7 @@ cd [project-directory]
 ### Running the Project
 
 ```bash
-[run-command]
+.\start.sh
 ```
 
 ### Usage

@@ -46,9 +46,6 @@ Generic AI assistants draw on the broad internet, so they can give confident ans
 
 ### Architecture
 
-[Add the system architecture or workflow Mermaid diagram here.]
-
-### Technology Stack
 ```mermaid
 flowchart TD
     A[Student uploads lecture audio<br/>and selects language] --> B[transcribe.py<br/>faster-whisper]
@@ -69,6 +66,8 @@ flowchart TD
     N --> O[Markdown export]
 ```
 
+### Technology Stack
+
 | Category        | Technologies                |
 | --------------- | --------------------------- |
 | Frontend        | Python using Gradio       |
@@ -81,7 +80,19 @@ flowchart TD
 
 ### How It Works
 
-[Explain the major components of the system and how they interact.]
+System components and how they interact
+
+Recapify is a pipeline of four Python modules, each owned by one team member, tied together by a Gradio interface.
+
+transcribe.py uses faster-whisper to turn the uploaded audio into timestamped segments, caching results to JSON so a recording is never transcribed twice.
+
+retrieval.py groups segments into chunks of about 300 to 500 words, embeds them with a multilingual model, and stores them in ChromaDB with start and end times. For a question, it returns the most relevant chunks.
+
+llm.py runs Gemma through Ollama to produce the summary, key terms, and quiz, and to answer questions from the retrieved chunks only, with timestamp citations in the chosen language.
+
+app.py is the Gradio interface with Notes, Quiz, and Ask tabs. It connects the modules, shows progress and friendly errors, and provides the Markdown export.
+
+Setup runs once per lecture: transcribe, index, then generate notes. After that, each question triggers one retrieval step and one model call. Each module has a fixed interface, so any one can be improved without touching the others.
 
 ### Technical Decisions
 
